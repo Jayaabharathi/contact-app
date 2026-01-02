@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    padding: 25px;
+  }
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #2d2d2d;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input, textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102,126,234,0.2);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #5a6ee0;
+}
+
+button:disabled {
+  background: #b6b6b6;
+  cursor: not-allowed;
+}
+
+/* Messages */
+.success {
+  color: #2f855a;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 14px;
+}
+
+/* Contact List */
+.list {
+  max-height: 360px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 10px;
+  background: #f7f8fc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card strong {
+  color: #222;
+  font-size: 16px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
